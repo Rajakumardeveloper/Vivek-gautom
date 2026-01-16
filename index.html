@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Vivek Gautam | Poet | Writer | Educator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --color-ivory: #F8F5F0;
+            --color-parchment: #F0EDE5;
+            --color-ink: #2C2C2C;
+            --color-gold: #B8860B;
+            --color-gold-light: #D4AF37;
+            --color-gold-dark: #8B6914;
+            --color-coffee: #6F4E37;
+            --color-gray: #7D7D7D;
+            --font-elegant: 'Playfair Display', serif;
+            --font-classic: 'Cormorant Garamond', serif;
+            --font-clean: 'Inter', sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-classic);
+            color: var(--color-ink);
+            background-color: var(--color-ivory);
+            line-height: 1.7;
+            overflow-x: hidden;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4af37' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Enhanced Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(248, 245, 240, 0.92);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-elegant);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-gold-dark);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            color: var(--color-gold);
+            font-size: 1.8rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2.5rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-ink);
+            font-family: var(--font-clean);
+            font-weight: 400;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        .nav-links a:hover {
+            color: var(--color-gold);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--color-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--color-ink);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .mobile-menu-btn:hover {
+            color: var(--color-gold);
+        }
+        
+        /* Enhanced Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 6rem;
+            background: linear-gradient(135deg, rgba(248,245,240,0.9) 0%, rgba(240,237,229,0.7) 100%);
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(to left, var(--color-gold-light), transparent);
+            opacity: 0.05;
+            z-index: -1;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-title {
+            font-family: var(--font-elegant);
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            color: var(--color-gold-dark);
+            letter-spacing: -0.5px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.8rem;
+            color: var(--color-coffee);
+            margin-bottom: 3rem;
+            font-weight: 400;
+            font-style: italic;
+        }
+        
+        .hero-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        
+        .divider-line {
+            width: 80px;
+            height: 1px;
+            background-color: var(--color-gold);
+            margin: 0 20px;
+        }
+        
+        .divider-icon {
+            color: var(--color-gold);
+            font-size: 1.2rem;
+        }
+        
+        .hero-quote {
+            font-size: 1.9rem;
+            font-style: italic;
+            margin: 3rem 0;
+            padding: 3rem;
+            border-left: 4px solid var(--color-gold);
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-quote::before {
+            content: '\201C';
+            font-family: var(--font-elegant);
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            font-size: 8rem;
+            color: rgba(184, 134, 11, 0.1);
+            z-index: 0;
+        }
+        
+        .hero-quote p {
+            position: relative;
+            z-index: 1;
+            line-height: 1.8;
+        }
+        
+        .hero-quote cite {
+            display: block;
+            margin-top: 1.5rem;
+            font-size: 1.3rem;
+            font-style: normal;
+            color: var(--color-gray);
+            text-align: right;
+        }
+        
+        /* Profile Image Section */
+        .profile-section {
+            padding: 5rem 0;
+            background-color: var(--color-parchment);
+        }
+        
+        .profile-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .profile-image-wrapper {
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            border: 8px solid white;
+        }
+        
+        .profile-image {
+            width: 100%;
+            height: 450px;
+            background: linear-gradient(45deg, var(--color-gold-light), var(--color-coffee));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+        }
+        
+        .profile-image-placeholder {
+            font-size: 5rem;
+            opacity: 0.8;
+        }
+        
+        .profile-image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(44, 44, 44, 0.8);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-family: var(--font-clean);
+            font-size: 0.9rem;
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 6rem 0;
+            position: relative;
+        }
+        
+        .section-title {
+            font-family: var(--font-elegant);
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: var(--color-gold-dark);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title-icon {
+            margin-right: 15px;
+            color: var(--color-gold);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, var(--color-gold), transparent);
+        }
+        
+        .section-content {
+            font-size: 1.3rem;
+            line-height: 1.8;
+        }
+        
+        .section-content p {
+            margin-bottom: 1.8rem;
+        }
+        
+        /* Works Section */
+        .works-section {
+            background-color: white;
+            position: relative;
+        }
+        
+        .works-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4af37' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+        
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .work-card {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 5px;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(184, 134, 11, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .work-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background-color: var(--color-gold);
+            transition: height 0.4s ease;
+        }
+        
+        .work-card:hover::before {
+            height: 100%;
+        }
+        
+        .work-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .work-icon {
+            font-size: 2.5rem;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .work-title {
+            font-family: var(--font-elegant);
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--color-ink);
+        }
+        
+        .work-description {
+            font-size: 1.1rem;
+            color: var(--color-gray);
+        }
+        
+        /* Themes Section */
+        .themes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .theme-item {
+            padding: 2rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+            border-top: 4px solid var(--color-gold);
+        }
+        
+        .theme-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+        
+        .theme-icon {
+            font-size: 2.5rem;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .theme-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-ink);
+            font-family: var(--font-elegant);
+        }
+        
+        /* Programs Section */
+        .programs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 3.5rem;
+        }
+        
+        .program-card {
+            padding: 3rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(184, 134, 11, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .program-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--color-gold), var(--color-gold-light));
+        }
+        
+        .program-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+        }
+        
+        .program-icon {
+            font-size: 3rem;
+            color: var(--color-gold);
+            margin-bottom: 2rem;
+        }
+        
+        .program-title {
+            font-family: var(--font-elegant);
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--color-gold-dark);
+        }
+        
+        /* Awards Section */
+        .awards-list {
+            list-style: none;
+        }
+        
+        .awards-list li {
+            padding: 2rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.1);
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .awards-list li:hover {
+            background-color: rgba(248, 245, 240, 0.5);
+        }
+        
+        .awards-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .award-icon {
+            color: var(--color-gold);
+            margin-right: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .award-name {
+            font-weight: 600;
+            color: var(--color-gold-dark);
+            margin-right: 10px;
+        }
+        
+        /* Social Engagement Section */
+        .engagement-section {
+            background-color: var(--color-parchment);
+            position: relative;
+        }
+        
+        .engagement-content {
+            background-color: white;
+            padding: 4rem;
+            border-radius: 5px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .engagement-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, transparent 50%, rgba(184, 134, 11, 0.05) 50%);
+            z-index: 0;
+        }
+        
+        .engagement-list {
+            margin-left: 2rem;
+            margin-top: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .engagement-list li {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .engagement-icon {
+            color: var(--color-gold);
+            margin-right: 10px;
+        }
+        
+        /* Media Section */
+        .media-section {
+            text-align: center;
+        }
+        
+        .media-links {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .media-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--color-ink);
+            transition: all 0.3s ease;
+            padding: 2rem;
+            border-radius: 10px;
+            background-color: white;
+            width: 200px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+        
+        .media-link:hover {
+            color: var(--color-gold);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .media-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Contact Section */
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 4rem;
+            border-radius: 5px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 2rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            font-family: var(--font-clean);
+            font-weight: 500;
+            color: var(--color-ink);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 1.2rem;
+            font-family: var(--font-clean);
+            font-size: 1.1rem;
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            background-color: rgba(248, 245, 240, 0.5);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-gold);
+            box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 180px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(to right, var(--color-gold), var(--color-gold-light));
+            color: white;
+            border: none;
+            padding: 1.2rem 3rem;
+            font-family: var(--font-clean);
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(184, 134, 11, 0.2);
+        }
+        
+        .submit-btn i {
+            margin-left: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--color-ink);
+            color: var(--color-ivory);
+            padding: 4rem 0;
+            text-align: center;
+            margin-top: 5rem;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            font-family: var(--font-elegant);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--color-gold);
+        }
+        
+        .footer-tagline {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            color: var(--color-parchment);
+        }
+        
+        .footer-divider {
+            width: 100px;
+            height: 1px;
+            background-color: var(--color-gold);
+            margin: 2rem auto;
+        }
+        
+        .copyright {
+            font-family: var(--font-clean);
+            font-size: 0.9rem;
+            color: var(--color-gray);
+            margin-top: 2rem;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 1200px) {
+            .profile-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .profile-image {
+                height: 400px;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+            
+            .hero-quote {
+                font-size: 1.6rem;
+                padding: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .programs-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--color-ivory);
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 0;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+                pointer-events: none;
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: all;
+            }
+            
+            .nav-links li {
+                margin: 1.2rem 0;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .hero-quote {
+                font-size: 1.4rem;
+                padding: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .media-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+            
+            .media-link {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .contact-form {
+                padding: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .works-grid,
+            .themes-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .engagement-content,
+            .contact-form {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-feather-alt logo-icon"></i>
+                Dr. <span>Vivek Gautam</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#themes">Themes</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#engagement">Social Engagement</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Dr. Vivek Gautam</h1>
+            <p class="hero-subtitle">Poet | Writer | Educator</p>
+            
+            <div class="hero-divider">
+                <div class="divider-line"></div>
+                <i class="fas fa-star divider-icon"></i>
+                <div class="divider-line"></div>
+            </div>
+            
+            <div class="hero-quote">
+                <p>"When nights become naked in intoxication and mornings turn shameless, being civilized holds no meaning for a human being."</p>
+                <cite>— Dr. Vivek Gautam</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section with Image -->
+    <section id="profile" class="profile-section">
+        <div class="container profile-container">
+            <div class="profile-image-wrapper">
+                <div class="profile-image">
+                    <img src="" alt="Dr. Vivek Gautam" style="width: 100%; height: 100%; object-fit: cover;">
+                    <i class="fas fa-user-tie profile-image-placeholder"></i>
+                    <div class="profile-image-caption">Dr. Vivek Gautam - Poet & Educator</div>
+                </div>
+            </div>
+            <div class="section-content">
+                <h2 class="section-title">
+                    <i class="fas fa-user-graduate section-title-icon"></i>
+                    About
+                </h2>
+                <p>Dr. Vivek Gautam is an acclaimed Hindi poet, writer, and dedicated educator, celebrated for his socially resonant and thought-provoking poetry that blends keen observation with profound inspiration.</p>
+                <p>His primary vocation is education, and he is presently engaged in teaching within Delhi's Vinod Nagar community. His academic commitment deeply informs and enriches his literary perspective.</p>
+                <p>Actively contributing to Hindi literature since 1986, Dr. Gautam has been a steadfast pillar of the literary world. Through the organization <strong>"Udbhav,"</strong> he has tirelessly championed the promotion of literature and arts, nurturing new voices and fostering cultural dialogue.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-book-open section-title-icon"></i>
+                Poetry Collections
+            </h2>
+            <div class="works-grid">
+                <div class="work-card">
+                    <div class="work-icon">
+                        <i class="fas fa-chess-board"></i>
+                    </div>
+                    <h3 class="work-title">The Chessboard of Time</h3>
+                    <p class="work-description">A profound exploration of temporality and human existence through the metaphorical lens of a chess game, where each move reflects life's philosophical dilemmas.</p>
+                </div>
+                <div class="work-card">
+                    <div class="work-icon">
+                        <i class="fas fa-hourglass"></i>
+                    </div>
+                    <h3 class="work-title">With Timeless Words</h3>
+                    <p class="work-description">A collection that bridges ancient wisdom with contemporary concerns, demonstrating how poetic language can transcend temporal boundaries.</p>
+                </div>
+                <div class="work-card">
+                    <div class="work-icon">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <h3 class="work-title">Gandhi's Fourth Monkey</h3>
+                    <p class="work-description">A powerful socio-political commentary that reimagines Gandhian principles in modern contexts, addressing the ethical challenges of contemporary society.</p>
+                </div>
+                <div class="work-card">
+                    <div class="work-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3 class="work-title">Purchased Sleep</h3>
+                    <p class="work-description">A critical examination of consumerist culture and its impact on human consciousness, exploring how modern comforts often come at the cost of spiritual emptiness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes & Style Section -->
+    <section id="themes">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-palette section-title-icon"></i>
+                Themes & Style
+            </h2>
+            <div class="themes-container">
+                <div class="theme-item">
+                    <div class="theme-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Social Consciousness</h3>
+                    <p>Poetry that reflects and responds to societal structures, inequalities, and collective human experience.</p>
+                </div>
+                <div class="theme-item">
+                    <div class="theme-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Critique of Consumerism</h3>
+                    <p>Examining the emptiness of material pursuits and the loss of authentic human connection in modern society.</p>
+                </div>
+                <div class="theme-item">
+                    <div class="theme-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Moral Values</h3>
+                    <p>Exploring ethical dimensions of contemporary life and the erosion of traditional virtues.</p>
+                </div>
+                <div class="theme-item">
+                    <div class="theme-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Human Emotions</h3>
+                    <p>Deep, nuanced exploration of love, loss, longing, and the complexities of human relationships.</p>
+                </div>
+            </div>
+            <div class="section-content" style="margin-top: 4rem;">
+                <p>Dr. Gautam's poetry offers a penetrating exploration of human sentiment and a compelling critique of contemporary societal constructs—most notably consumerist culture and eroding ethics. His verses artfully mirror the existential voids of modern life and the evolving nuances of human connections.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs & Initiatives -->
+    <section id="programs" class="profile-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-microphone-alt section-title-icon"></i>
+                Programs & Initiatives
+            </h2>
+            <div class="programs-container">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-users-between-lines"></i>
+                    </div>
+                    <h3 class="program-title">Udbhav Literary Organization</h3>
+                    <p>Founded and nurtured by Dr. Gautam, Udbhav has been a cornerstone for promoting literature and arts since its inception. The organization hosts literary gatherings, poetry readings, workshops, and cultural events that foster dialogue and nurture emerging literary voices.</p>
+                    <p style="margin-top: 1.5rem; font-style: italic; color: var(--color-gray);">"A platform where words find their wings and voices their resonance."</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="program-title">Bindu Se Sindhu</h3>
+                    <p>Amid the COVID-19 pandemic, Dr. Gautam pioneered this successful online literary series, bridging global literature enthusiasts via Facebook and YouTube. The program transformed challenges into opportunities, creating a vibrant digital literary community that continues to thrive.</p>
+                    <p style="margin-top: 1.5rem; font-style: italic; color: var(--color-gray);">"From a single drop to the ocean of literary expression."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section id="awards">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-award section-title-icon"></i>
+                Awards & Recognition
+            </h2>
+            <ul class="awards-list">
+                <li>
+                    <i class="fas fa-medal award-icon"></i>
+                    <span class="award-name">Udbhav Cultural Honor</span> – For outstanding contribution to Hindi literature and cultural promotion
+                </li>
+                <li>
+                    <i class="fas fa-trophy award-icon"></i>
+                    <span class="award-name">Literary Excellence Award</span> – From the Hindi Sahitya Academy
+                </li>
+                <li>
+                    <i class="fas fa-graduation-cap award-icon"></i>
+                    <span class="award-name">Shikshak Samman</span> – Recognition for contributions to education and mentoring
+                </li>
+                <li>
+                    <i class="fas fa-star award-icon"></i>
+                    <span class="award-name">Sahitya Shree Award</span> – For poetry collections addressing contemporary social issues
+                </li>
+                <li>
+                    <i class="fas fa-hands-helping award-icon"></i>
+                    <span class="award-name">Social Justice Literary Award</span> – For anti-caste poetry and advocacy work
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Social Engagement -->
+    <section id="engagement" class="engagement-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-handshake section-title-icon"></i>
+                Social Engagement
+            </h2>
+            <div class="engagement-content">
+                <div class="section-content">
+                    <p>In recent years, Dr. Gautam has actively shaped literary discourse around anti-caste poetry and social justice, underscoring his unwavering dedication to transformative, socially engaged art.</p>
+                    <p>His work in this domain includes:</p>
+                    <ul class="engagement-list">
+                        <li><i class="fas fa-check-circle engagement-icon"></i>Curating and participating in literary programs focused on anti-caste discourse</li>
+                        <li><i class="fas fa-check-circle engagement-icon"></i>Writing poetry that challenges social hierarchies and advocates for equality</li>
+                        <li><i class="fas fa-check-circle engagement-icon"></i>Mentoring young writers from marginalized communities</li>
+                        <li><i class="fas fa-check-circle engagement-icon"></i>Organizing readings and discussions that bridge literary and social justice movements</li>
+                        <li><i class="fas fa-check-circle engagement-icon"></i>Collaborating with activists and scholars to create interdisciplinary dialogues</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">This commitment reflects his belief in literature as a vehicle for social transformation and his dedication to creating a more equitable society through artistic expression.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media" class="media-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-satellite section-title-icon"></i>
+                Media & Digital Presence
+            </h2>
+            <div class="section-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p>Connect with Dr. Gautam's literary journey through his digital platforms and explore his works, readings, and literary discussions.</p>
+            </div>
+            <div class="media-links">
+                <a href="#" class="media-link" target="_blank">
+                    <div class="media-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <span>YouTube Channel</span>
+                    <small style="margin-top: 0.5rem; color: var(--color-gray);">Bindu Se Sindhu Series</small>
+                </a>
+                <a href="#" class="media-link" target="_blank">
+                    <div class="media-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <span>Facebook Page</span>
+                    <small style="margin-top: 0.5rem; color: var(--color-gray);">Literary Discussions</small>
+                </a>
+                <a href="#" class="media-link" target="_blank">
+                    <div class="media-icon">
+                        <i class="fas fa-podcast"></i>
+                    </div>
+                    <span>Literary Podcast</span>
+                    <small style="margin-top: 0.5rem; color: var(--color-gray);">Udbhav Sessions</small>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="profile-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-envelope section-title-icon"></i>
+                Contact
+            </h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="What is your message regarding?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Please type your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Dr. Vivek Gautam</div>
+                <p class="footer-tagline">Where words illuminate conscience and poetry becomes revolution</p>
+                
+                <div class="footer-divider"></div>
+                
+                <div style="margin-top: 2rem;">
+                    <p>Poet | Writer | Educator | Social Thinker</p>
+                    <p class="copyright">&copy; 2023 Dr. Vivek Gautam. All rights reserved.</p>
+                    <p class="copyright" style="margin-top: 0.5rem;">Designed with reverence for literature and social consciousness.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if(this.getAttribute('href') === '#') return;
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if(targetElement) {
+                    // Close mobile menu if open
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Show elegant notification
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Message Sent';
+            submitBtn.style.background = 'linear-gradient(to right, #4CAF50, #45a049)';
+            
+            // In a real implementation, you would send this data to a server
+            console.log('Form submitted:', { name, email, subject, message });
+            
+            // Reset form after delay
+            setTimeout(() => {
+                contactForm.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = 'linear-gradient(to right, var(--color-gold), var(--color-gold-light))';
+                
+                // Show subtle confirmation
+                const notification = document.createElement('div');
+                notification.innerHTML = `
+                    <div style="position: fixed; top: 100px; right: 20px; background: var(--color-gold); color: white; padding: 15px 25px; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); z-index: 9999; font-family: var(--font-clean);">
+                        <i class="fas fa-check-circle"></i> Thank you, ${name}! Your message has been sent.
+                    </div>
+                `;
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.remove();
+                }, 4000);
+            }, 2000);
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.padding = '0.5rem 0';
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.08)';
+            } else {
+                header.style.padding = '1rem 0';
+                header.style.boxShadow = 'none';
+            }
+            
+            // Highlight active section in navigation
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if(window.scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Add scroll animations for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.work-card, .theme-item, .program-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
