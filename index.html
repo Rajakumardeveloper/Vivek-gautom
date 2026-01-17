@@ -136,14 +136,23 @@
         
         /* Enhanced Hero Section */
         .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding-top: 6rem;
-            background: linear-gradient(135deg, rgba(248,245,240,0.9) 0%, rgba(240,237,229,0.7) 100%);
-            overflow: hidden;
-        }
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 8rem; /* Increased from 6rem to provide more space below navbar */
+    background: linear-gradient(135deg, rgba(248,245,240,0.9) 0%, rgba(240,237,229,0.7) 100%);
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 2rem; /* Added extra padding at top */
+}
         
         .hero::before {
             content: '';
